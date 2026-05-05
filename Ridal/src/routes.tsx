@@ -11,6 +11,10 @@ import { AdminSettings } from "./app/components/admin/AdminSettings";
 import { AdminLogin } from "./app/components/admin/AdminLogin";
 import { ProtectedRoute } from "./app/components/admin/ProtectedRoute";
 import { RideNRepairProcess } from "./app/components/website/RideNRepairProcess";
+import { RideNRepairFranchise } from "./app/components/website/RideNRepairFranchise";
+import { RideNRepairServices } from "./app/components/website/RideNRepairServices";
+import { RideNRepairBooking } from "./app/components/website/RideNRepairBooking";
+
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +28,18 @@ export const router = createBrowserRouter([
   {
     path: "/Process",
     Component: RideNRepairProcess,
+  },
+  {
+    path: "/booking",
+    Component: RideNRepairBooking,
+  },
+  {
+    path: "/franchise",
+    Component: RideNRepairFranchise,
+  },
+  {
+    path: "/services",
+    Component: RideNRepairServices,
   },
 
 

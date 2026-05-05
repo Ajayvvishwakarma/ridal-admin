@@ -7,15 +7,17 @@ import {
 } from "lucide-react";
 
 export const RideNRepairProcess = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
 
   // Menu Order: Home, Services, Blog, Contact, Process, About
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "/#services" }, // Link to Home page section
+    { name: "Services", href: "/#services" }, 
     { name: "Blog", href: "/#blog" },       // Link to Home page section
-    { name: "Contact", href: "/#contact" },  // Link to Home page section
-    { name: "Process", href: "/process", active: true }, // Current Page
+    { name: "Contact", href: "/#contact" },
+    { name: "Booking", href: "/booking" },
+    { name: "Franchise", href: "/franchise" },  
+    { name: "Process", href: "/process", active: true }, 
     { name: "About", href: "/about" },
   ];
 
@@ -139,9 +141,7 @@ export const RideNRepairProcess = () => {
 
       {/* --- HERO SECTION --- */}
       <header style={{ background: "#fff", padding: "60px 5%", textAlign: "center", borderBottom: "1px solid #eee" }}>
-        <div style={{ fontSize: "14px", color: "#6B7280", marginBottom: "10px" }}>
-          Home <span style={{ margin: "0 5px" }}>›</span> How It Works
-        </div>
+        
         <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 800, color: "#111827", marginBottom: "16px", letterSpacing: "-1px" }}>
           How Ride N Repair Works
         </h1>

@@ -119,7 +119,7 @@ export function GarixWebsite() {
               </a>
             ))}
             
-            {/* ADDED: Process Link (Desktop) */}
+            {/* Process Link */}
             <Link
               to="/process"
               className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
@@ -127,7 +127,30 @@ export function GarixWebsite() {
               Process
             </Link>
 
-            {/* About - React Router Link */}
+            {/* Services Link */}
+            <Link
+              to="/services"
+              className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
+            >
+              Services
+            </Link>
+
+            {/* ADDED: Franchise Link (Desktop) */}
+            <Link
+              to="/franchise"
+              className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
+            >
+              Franchise
+            </Link>
+            {/* About Link */}
+            <Link
+              to="/booking"
+              className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
+            >
+              Booking
+            </Link>
+
+            {/* About Link */}
             <Link
               to="/about"
               className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
@@ -162,7 +185,7 @@ export function GarixWebsite() {
               </a>
             ))}
             
-            {/* ADDED: Process Link (Mobile) */}
+            {/* Process Link */}
             <Link
               to="/process"
               className="text-[#151515] font-medium hover:text-[#e8b84b]"
@@ -171,7 +194,16 @@ export function GarixWebsite() {
               Process
             </Link>
 
-            {/* About - React Router Link in mobile */}
+            {/* ADDED: Franchise Link (Mobile) */}
+            <Link
+              to="/franchise"
+              className="text-[#151515] font-medium hover:text-[#e8b84b]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Franchise
+            </Link>
+
+            {/* About Link */}
             <Link
               to="/about"
               className="text-[#151515] font-medium hover:text-[#e8b84b]"
@@ -179,6 +211,23 @@ export function GarixWebsite() {
             >
               About
             </Link>
+            {/* Services Link */}
+
+            <Link
+              to="/services"
+              className="text-[#151515] font-medium hover:text-[#e8b84b]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Services
+            </Link>
+            <Link
+              to="/booking"
+              className="text-[#151515] font-medium hover:text-[#e8b84b]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Booking
+            </Link>
+
             <Link
               to="/admin/login"
               className="bg-[#e8b84b] text-black px-4 py-2 font-bold text-sm text-center rounded"
@@ -449,8 +498,22 @@ export function GarixWebsite() {
                 </li>
                 {/* ADDED: Process Link (Footer) */}
                 <li>
+                  <Link to="/booking" className="text-gray-400 text-sm hover:text-[#e8b84b] transition flex items-center gap-2">
+                    <ChevronRight size={14} />Booking
+                  </Link>
+                </li>
+            
+
+                {/* ADDED: Process Link (Footer) */}
+                <li>
                   <Link to="/process" className="text-gray-400 text-sm hover:text-[#e8b84b] transition flex items-center gap-2">
                     <ChevronRight size={14} />Process
+                  </Link>
+                </li>
+                {/* ADDED: Franchise Link (Footer) */}
+                <li>
+                  <Link to="/franchise" className="text-gray-400 text-sm hover:text-[#e8b84b] transition flex items-center gap-2">
+                    <ChevronRight size={14} />Franchise
                   </Link>
                 </li>
                 <li><a href="#services" className="text-gray-400 text-sm hover:text-[#e8b84b] transition flex items-center gap-2"><ChevronRight size={14} />Services</a></li>

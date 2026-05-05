@@ -145,6 +145,13 @@ export function AboutUs() {
             >
               Services
             </a>
+             {/* Services - Anchor to Home */}
+            <a
+              href="/booking"
+              className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
+            >
+              Booking
+            </a>
 
             {/* Blog - Anchor to Home */}
             <a
@@ -160,6 +167,12 @@ export function AboutUs() {
               className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
             >
               Contact
+            </a>
+            <a
+              href="/franchise"
+              className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
+            >
+              Franchise
             </a>
 
             {/* Process - New Link Added */}
@@ -207,6 +220,13 @@ export function AboutUs() {
               onClick={() => setMenuOpen(false)}
             >
               Services
+            </a>
+            <a
+              href="/#franchise"
+              className="text-[#151515] font-medium hover:text-[#e8b84b]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Franchise
             </a>
             <a
               href="/#blog"
@@ -414,6 +434,8 @@ export function AboutUs() {
                 <li><Link to="/process" className="hover:text-white transition">Process</Link></li>
                 <li><a href="/#services" className="hover:text-white transition">Services</a></li>
                 <li><a href="/#contact" className="hover:text-white transition">Contact</a></li>
+                <li><a href="/#about" className="hover:text-white transition">About Us</a></li>
+                <li><a href="/#franchise" className="hover:text-white transition">Franchise</a></li>
               </ul>
             </div>
             <div>
