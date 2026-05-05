@@ -72,7 +72,7 @@ export const RideNRepairBooking = () => {
       <nav className="sticky top-0 z-50 bg-white border-b border-gray-200" style={{ padding: "0 5%", height: "70px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "24px", fontWeight: 800, color: "#1F2937" }}>
           <div style={{ background: "#F59E0B", padding: "6px", borderRadius: "6px" }}><Wrench color="#fff" size={20} /></div>
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Ride N Repair</Link>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>GARIX</Link>
         </div>
 
         <div className="hidden md:flex items-center gap-4">

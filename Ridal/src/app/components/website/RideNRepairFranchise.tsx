@@ -39,7 +39,7 @@ export const RideNRepairFranchise = () => {
         {/* Logo */}
         <div style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "24px", fontWeight: 800, color: "#1F2937" }}>
           <div style={{ background: "#F59E0B", padding: "6px", borderRadius: "6px" }}><Wrench color="#fff" size={20} /></div>
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Ride N Repair</Link>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>GARIX</Link>
         </div>
 
         {/* Desktop Nav */}
