@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 import {
   Phone,
   Mail,
@@ -118,6 +118,15 @@ export function GarixWebsite() {
                 {item}
               </a>
             ))}
+            
+            {/* ADDED: Process Link (Desktop) */}
+            <Link
+              to="/process"
+              className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
+            >
+              Process
+            </Link>
+
             {/* About - React Router Link */}
             <Link
               to="/about"
@@ -152,6 +161,16 @@ export function GarixWebsite() {
                 {item}
               </a>
             ))}
+            
+            {/* ADDED: Process Link (Mobile) */}
+            <Link
+              to="/process"
+              className="text-[#151515] font-medium hover:text-[#e8b84b]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Process
+            </Link>
+
             {/* About - React Router Link in mobile */}
             <Link
               to="/about"
@@ -426,6 +445,12 @@ export function GarixWebsite() {
                 <li>
                   <Link to="/about" className="text-gray-400 text-sm hover:text-[#e8b84b] transition flex items-center gap-2">
                     <ChevronRight size={14} />About Us
+                  </Link>
+                </li>
+                {/* ADDED: Process Link (Footer) */}
+                <li>
+                  <Link to="/process" className="text-gray-400 text-sm hover:text-[#e8b84b] transition flex items-center gap-2">
+                    <ChevronRight size={14} />Process
                   </Link>
                 </li>
                 <li><a href="#services" className="text-gray-400 text-sm hover:text-[#e8b84b] transition flex items-center gap-2"><ChevronRight size={14} />Services</a></li>

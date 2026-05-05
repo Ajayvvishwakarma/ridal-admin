@@ -97,27 +97,20 @@ export function AboutUs() {
 
   const testimonials = [
     {
-      text: "I recently had my Honda Activa serviced at Ride N Repair and I couldn't be happier with the service I received. The mechanic was friendly and knowledgeable, taking the time to explain the necessary work and answer all my questions. Highly recommend Ride N Repair for all your two-wheeler needs.",
+      text: "I recently had my Honda Activa serviced at GARIX and I couldn't be happier with the service I received. The mechanic was friendly and knowledgeable, taking the time to explain the necessary work and answer all my questions. Highly recommend Ride N Repair for all your two-wheeler needs.",
       author: "Saurabh Mehta",
       rating: 5,
     },
     {
-      text: "Ride N Repair did an excellent job fixing my Royal Enfield. The team was professional and efficient, ensuring every detail was taken care of. They kept me informed throughout the process and completed the service ahead of schedule. I'm very satisfied and will definitely return for future maintenance.",
+      text: "GARIX did an excellent job fixing my Royal Enfield. The team was professional and efficient, ensuring every detail was taken care of. They kept me informed throughout the process and completed the service ahead of schedule. I'm very satisfied and will definitely return for future maintenance.",
       author: "Anita Patel",
       rating: 5,
     },
     {
-      text: "Had my Suzuki Access 125 serviced at Ride N Repair. The staff was courteous and the mechanic was very knowledgeable. They identified and fixed issues that I wasn't even aware of. The pricing was transparent and fair. Great experience overall!",
+      text: "Had my Suzuki Access 125 serviced at GARIX. The staff was courteous and the mechanic was very knowledgeable. They identified and fixed issues that I wasn't even aware of. The pricing was transparent and fair. Great experience overall!",
       author: "Rahul Gupta",
       rating: 5,
     },
-  ];
-
-  // Anchor nav items for About page (link back to home sections)
-  const anchorNavItems = [
-    { label: "Services", href: "/#services" },
-    { label: "Blog", href: "/#blog" },
-    { label: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -144,19 +137,43 @@ export function AboutUs() {
             >
               Home
             </Link>
+            
+            {/* Services - Anchor to Home */}
+            <a
+              href="/#services"
+              className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
+            >
+              Services
+            </a>
+
+            {/* Blog - Anchor to Home */}
+            <a
+              href="/#blog"
+              className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
+            >
+              Blog
+            </a>
+
+            {/* Contact - Anchor to Home */}
+            <a
+              href="/#contact"
+              className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
+            >
+              Contact
+            </a>
+
+            {/* Process - New Link Added */}
+            <Link
+              to="/process"
+              className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
+            >
+              Process
+            </Link>
+
             {/* About - current page, highlighted */}
             <span className="text-[#e8b84b] font-bold text-sm uppercase tracking-wide border-b-2 border-[#e8b84b] pb-0.5">
               About
             </span>
-            {anchorNavItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-[#151515] font-medium hover:text-[#e8b84b] transition-colors text-sm uppercase tracking-wide"
-              >
-                {item.label}
-              </a>
-            ))}
           </div>
 
           <div className="hidden md:flex items-center gap-4">
@@ -184,17 +201,35 @@ export function AboutUs() {
             >
               Home
             </Link>
+            <a
+              href="/#services"
+              className="text-[#151515] font-medium hover:text-[#e8b84b]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Services
+            </a>
+            <a
+              href="/#blog"
+              className="text-[#151515] font-medium hover:text-[#e8b84b]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Blog
+            </a>
+            <a
+              href="/#contact"
+              className="text-[#151515] font-medium hover:text-[#e8b84b]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact
+            </a>
+            <Link
+              to="/process"
+              className="text-[#151515] font-medium hover:text-[#e8b84b]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Process
+            </Link>
             <span className="text-[#e8b84b] font-bold">About</span>
-            {anchorNavItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-[#151515] font-medium hover:text-[#e8b84b]"
-                onClick={() => setMenuOpen(false)}
-              >
-                {item.label}
-              </a>
-            ))}
             <a
               href="/#contact"
               className="bg-[#e8b84b] text-black px-4 py-2 font-bold text-sm text-center rounded"
@@ -209,7 +244,7 @@ export function AboutUs() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">About Ride N Repair</h1>
+          <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">About </h1>
           <p className="text-xl text-gray-700 mb-8">Making Vehicle Service Hassle-Free</p>
           <p className="text-lg text-gray-600 mb-12">
             Doorstep bike and car repair across 32+ Indian cities — trusted by 2,00,000+ customers
@@ -246,13 +281,13 @@ export function AboutUs() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-black text-gray-900 mb-4">Our Story</h2>
-          <h3 className="text-2xl font-bold text-blue-600 mb-8">Why We Built Ride N Repair</h3>
+          <h3 className="text-2xl font-bold text-blue-600 mb-8">Why We Built GARIX</h3>
           <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
             <p>
               Getting a bike or car serviced in India has always been a frustrating experience — long wait times at garages, opaque pricing, questionable parts, and zero transparency into what's actually being done to your vehicle. We knew there had to be a better way.
             </p>
             <p>
-              Ride N Repair was built to solve this. We bring certified, background-verified mechanics directly to your doorstep — whether it's your home, office, or anywhere else. Every service comes with transparent pricing (shown upfront before you book), genuine parts, real-time tracking via our app, and a 30-day warranty.
+              GARIX was built to solve this. We bring certified, background-verified mechanics directly to your doorstep — whether it's your home, office, or anywhere else. Every service comes with transparent pricing (shown upfront before you book), genuine parts, real-time tracking via our app, and a 30-day warranty.
             </p>
             <p>
               From a two-wheeler-focused startup, we've grown to serve both bikes and cars across 32+ cities in India, with over 2,00,000 happy customers and a 4.8-star rating. Our mission remains the same: make vehicle maintenance as simple, transparent, and trustworthy as it should be.
@@ -346,7 +381,7 @@ export function AboutUs() {
       {/* CTA */}
       <section className="bg-blue-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-black mb-4">Ready to Experience the Difference?</h2>
+          <h2 className="text-4xl font-black mb-4">Ready to Experience Difference?</h2>
           <p className="text-xl mb-8 text-blue-100">
             Doorstep service · Certified mechanics · Starting ₹450 · 30-day warranty
           </p>
@@ -376,8 +411,8 @@ export function AboutUs() {
               <h4 className="font-black text-lg mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><Link to="/" className="hover:text-white transition">Home</Link></li>
+                <li><Link to="/process" className="hover:text-white transition">Process</Link></li>
                 <li><a href="/#services" className="hover:text-white transition">Services</a></li>
-                <li><Link to="/about" className="hover:text-white transition">About Us</Link></li>
                 <li><a href="/#contact" className="hover:text-white transition">Contact</a></li>
               </ul>
             </div>
@@ -392,7 +427,7 @@ export function AboutUs() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2026 Ride N Repair. All Rights Reserved.</p>
+            <p>&copy; 2026 GARIX. All Rights Reserved.</p>
           </div>
         </div>
       </footer>

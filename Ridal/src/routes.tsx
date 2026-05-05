@@ -10,6 +10,7 @@ import { AdminCustomers } from "./app/components/admin/AdminCustomers";
 import { AdminSettings } from "./app/components/admin/AdminSettings";
 import { AdminLogin } from "./app/components/admin/AdminLogin";
 import { ProtectedRoute } from "./app/components/admin/ProtectedRoute";
+import { RideNRepairProcess } from "./app/components/website/RideNRepairProcess";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,12 @@ export const router = createBrowserRouter([
     path: "/about",
     Component: AboutUs,
   },
+  {
+    path: "/Process",
+    Component: RideNRepairProcess,
+  },
+
+
   {
     path: "/admin/login",
     Component: AdminLogin,
